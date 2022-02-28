@@ -41,3 +41,7 @@ table {
 a{
     text-decoration: none;
 }
+
+
+abbr[title],
+abbr[data-bs-original-title] {}

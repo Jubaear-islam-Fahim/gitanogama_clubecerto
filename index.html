@@ -50,7 +50,7 @@
         <div class="check-footer">
             <form id="myform" method="POST" class="quantity" action="#">
                 <button type="button" class="qtyminus minus" field="quantity"><i class="fa-solid fa-minus"></i></button>
-                <input type="number" name="quantity" value="1" min="1" max="5" class="qty" />
+                <input type="number" name="quantity" value="1" min="1" max="5" class="qty" readonly/>
                 <button type="button" class="qtyplus plus" field="quantity"><i class="fa-solid fa-plus"></i></button>
             </form>
 
@@ -65,7 +65,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+
+   <script>
         $(document).ready(($) => {
             $('.quantity').on('click', '.plus', function (e) {
                 let $input = $(this).prev('input.qty');
