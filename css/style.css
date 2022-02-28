@@ -47,7 +47,7 @@ header {
 .box_btn ul li a {
     background-color: #394531;
     min-width: 210px;
-    height: 63px;
+    height: 40px;
     display: inline-block;
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     display: grid;
@@ -298,7 +298,7 @@ header {
     }
     .box_btn ul li a { 
         min-width: 147px;
-        height: 31px; 
+        height: 30px; 
         font-size: 13px; 
         padding: 10px 25px;
     }
