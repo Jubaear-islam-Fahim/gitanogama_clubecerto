@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TankPad NFT Loot Box</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-area">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="box_btn">
+                <ul>
+                    <li><a href="#" class="active">tankpad box</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                </ul>
+            </div>
+            <div class="connect_btn">
+                <a href="#">Connect Wallet</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-area">
+        <div class="fire-bg">
+            <img src="img/fire-welding-sparks-png-thumb23.png" alt="">
+        </div>
+        <div class="heading-text">
+            <div class="h1">TANKPAD BOX</div>
+            <div class="h6">Each box contains an NFT Tank <br /> with randomized skins and stats.</div>
+        </div>
+        <div class="geno-box">
+            <div class="box_bgi">
+                <img src="img/box.png" alt="box">
+            </div>
+            <h5>GENO BOX</h5>
+            <div class="bnb_btn"><img src="img/binance-coin.png" alt=""> 0.5 BNB</div>
+        </div>
+
+        <div class="check-footer">
+            <form id="myform" method="POST" class="quantity" action="#">
+                <button type="button" class="qtyminus minus" field="quantity"><i class="fa-solid fa-minus"></i></button>
+                <input type="number" name="quantity" value="1" min="1" max="5" class="qty" />
+                <button type="button" class="qtyplus plus" field="quantity"><i class="fa-solid fa-plus"></i></button>
+            </form>
+
+            <div class="wallet_btn">
+                <a href="#"><img src="img/checked-mark.png"> Connect Wallet</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(($) => {
+            $('.quantity').on('click', '.plus', function (e) {
+                let $input = $(this).prev('input.qty');
+                let val = parseInt($input.val());
+                $input.val(val + 1).change();
+               
+            });
+
+            $('.quantity').on('click', '.minus',
+                function (e) {
+                    let $input = $(this).next('input.qty');
+                    var val = parseInt($input.val());
+                    if (val > 0) {
+                        $input.val(val - 1).change();
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>
