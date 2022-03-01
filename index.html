@@ -46,7 +46,7 @@
             <h5>GENO BOX</h5>
             <div class="bnb_btn">
                 <img src="img/binance-coin.png" alt="">
-                <div class="binance_bnb"><span>0.5</span> BNB</div>
+                <div class="binance_bnb"><span class="bnp-bal">0.5</span> BNB</div>
             </div>
         </div>
 
@@ -71,23 +71,52 @@
 
     <script>
         $(document).ready(($) => {
- 
+
             $('.main-area').on('click', '.plus', function (e) {
-                let $input = $(this).prev('input.qty'); 
+                let $input = $(this).prev('input.qty');
                 let val = parseInt($input.val());
-                $input.val(val + 1).change(); 
-  
+
+                $input.val(val + 1).change();
             });
- 
-  
+
+
             $('.main-area').on('click', '.minus', function (e) {
                 let $input = $(this).next('input.qty');
                 var val = parseInt($input.val());
                 if (val > 1) {
                     $input.val(val - 1).change();
-                }; 
+                };
             });
-             
+
+
+
+            const plusBnp = () => {
+                const bnpBal = document.querySelector('.bnp-bal').innerText
+                const BalInt = parseFloat(bnpBal)
+                const newBal = BalInt + 0.5
+                document.querySelector('.bnp-bal').innerText = newBal
+            }
+
+            const minusBnp = () => {
+                const bnpBal = document.querySelector('.bnp-bal').innerText
+                const BalInt = parseFloat(bnpBal)
+                if (BalInt > 0.5) {
+                    const newBal = BalInt - 0.5
+                    document.querySelector('.bnp-bal').innerText = newBal
+                }
+            }
+
+            const plusBtn = document.querySelector('.plus')
+            plusBtn.addEventListener('click', () => {
+                plusBnp()
+            })
+
+            const minusBtn = document.querySelector('.minus')
+            minusBtn.addEventListener('click', () => {
+                minusBnp()
+            })
+
+
         });
     </script>
 </body>
