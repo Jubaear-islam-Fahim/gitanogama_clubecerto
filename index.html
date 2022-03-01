@@ -44,13 +44,15 @@
                 <img src="img/box.png" alt="box">
             </div>
             <h5>GENO BOX</h5>
-            <div class="bnb_btn"><img src="img/binance-coin.png" alt=""> 0.5 BNB</div>
+            <div class="bnb_btn"><img src="img/binance-coin.png" alt="">
+                 <span>0.5 BNB</span>
+            </div>
         </div>
 
         <div class="check-footer">
             <form id="myform" method="POST" class="quantity" action="#">
                 <button type="button" class="qtyminus minus" field="quantity"><i class="fa-solid fa-minus"></i></button>
-                <input type="number" name="quantity" value="1" min="1" max="5" class="qty" readonly/>
+                <input type="number" name="quantity" value="1" class="qty" readonly />
                 <button type="button" class="qtyplus plus" field="quantity"><i class="fa-solid fa-plus"></i></button>
             </form>
 
@@ -66,23 +68,32 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-   <script>
+    <script>
         $(document).ready(($) => {
-            $('.quantity').on('click', '.plus', function (e) {
-                let $input = $(this).prev('input.qty');
+ 
+            $('.main-area').on('click', '.plus', function (e) {
+                let $input = $(this).prev('input.qty'); 
                 let val = parseInt($input.val());
-                $input.val(val + 1).change();
-               
+                $input.val(val + 1).change(); 
+  
             });
 
-            $('.quantity').on('click', '.minus',
-                function (e) {
-                    let $input = $(this).next('input.qty');
-                    var val = parseInt($input.val());
-                    if (val > 1) {
-                        $input.val(val - 1).change();
-                    }
-                });
+            $('.main-area').on('click', '.plus', function (e) {
+                let $bnbInput = $(this).prev('input.bnbInput'); 
+                let vals = parseInt($bnbInput.val());
+                $bnbInput.val(vals + 1).change(); 
+  
+            });
+ 
+            
+            $('.main-area').on('click', '.minus', function (e) {
+                let $input = $(this).next('input.qty');
+                var val = parseInt($input.val());
+                if (val > 1) {
+                    $input.val(val - 1).change();
+                }; 
+            });
+             
         });
     </script>
 </body>

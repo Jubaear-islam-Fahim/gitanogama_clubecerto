@@ -237,6 +237,7 @@ header {
     font-size: 35px;
     color: #7a866e;
     font-family: "Squares";
+    width: 100%;
 }
 
 .quantity input,
