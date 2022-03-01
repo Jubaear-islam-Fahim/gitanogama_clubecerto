@@ -1,0 +1,315 @@
+@import url("../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+
+.clubecert-area {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 10px;
+
+}
+
+.clubecert-left {
+    padding: 40px;
+    padding-right: 0;
+
+    .clubecert-title {
+        font-size: 34px;
+        line-height: 46px;
+        color: #48854B;
+        font-weight: 300;
+        padding: 27px 0;
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    form {
+        display: grid;
+        gap: 23px;
+    }
+
+    .box {
+        display: grid;
+        gap: 20px;
+
+        .grope-box {
+            label {
+                font-weight: normal;
+                line-height: 91.9%;
+                color: #AFAFAF;
+                padding-bottom: 10px;
+            }
+
+            input {
+                background: #F2F2F2;
+                border: 1px dashed #AFAFAF;
+                box-sizing: border-box;
+                outline: none !important;
+                box-shadow: none !important;
+                height: 40px;
+                width: 100%;
+                padding: 0 10px;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .select-content {
+        display: grid;
+        grid-template-columns: 35% 30px 1fr;
+        gap: 20px;
+        align-items: center;
+
+
+
+        ul {
+            display: flex;
+            gap: 14px;
+
+            .c_o {
+                width: 40px;
+                height: 40px;
+                border-radius: 3px;
+                background-color: #fff;
+            }
+
+            .red {
+                background: #FE0000;
+            }
+
+            .green {
+                background: #00FF01;
+            }
+
+            .navy {
+                background: #0100FE;
+            }
+
+        }
+
+        .upload {
+            height: 40px;
+            background: #48854B;
+            box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 17px;
+            color: #AFAFAF;
+            text-transform: uppercase;
+            padding-top: 32px;
+        }
+    }
+
+    .title-s {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 91.9%;
+        color: #AFAFAF;
+        padding-bottom: 15px;
+    }
+
+    .card-template {}
+
+    .card-template-btn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        a {
+            border: 1px dashed #48854B;
+            box-sizing: border-box;
+            border-radius: 3px;
+            height: 48px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 18px;
+            line-height: 17px;
+            color: #48854B;
+        }
+
+        .active {
+            background: #48854B;
+            box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+            border-radius: 3px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+    }
+
+    .check-fild {
+        ul{
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        li{
+            
+            label {
+                font-size: 16px;
+                line-height: 91.9%;
+                color: #AFAFAF;
+                cursor: pointer;
+            }
+    
+            input {
+                visibility: hidden;
+                position: absolute;
+            }
+    
+            .check_btn+label:before {
+                content: "";
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: text-top;
+                width: 13px;
+                height: 13px;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 3px;
+                margin-top: 4px;
+            }
+    
+            .check_btn:checked+label:before {
+                background: #48854B;
+                box-shadow: 0px 4px 4px #C1E1C3;
+            }
+    
+            input:checked~label {
+                color: #48854B;
+                font-weight: 500;
+            }
+        }
+        
+
+
+
+
+    }
+
+    .clubecerto-logo {
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            img {}
+        }
+    }
+
+    .watermark {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        align-items: center;
+
+        .title-s {
+            padding-bottom: 0;
+        }
+
+        .watermark-btn {
+            display: flex;
+            gap: 10px;
+
+            .btn {
+                width: 51px;
+                height: 32px;
+                font-size: 18px;
+                line-height: 17px;
+                text-align: center;
+                color: #48854B;
+                border: 1px dashed #48854B;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+            }
+
+            .active {
+                background-color: #48854B;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .copy-right {
+        padding-top: 35px;
+
+        ul {
+            display: flex;
+            gap: 15px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 17px;
+            color: #AFAFAF;
+            padding-top: 10px;
+
+            span {
+                font-weight: 500;
+                color: #48854B;
+            }
+        }
+    }
+
+
+}
+
+.clubecert-right {
+    background-image: url(../img/right-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+
+    .clubecert-ttt {
+        position: relative;
+        left: 39%;
+        width: 430px;
+
+        img {
+            width: 100%;
+            padding-top: 15px;
+        }
+
+    }
+
+    .h2 {
+        font-weight: bold;
+        font-size: 43px;
+        line-height: 49px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {}
+
+@media (min-width: 320px) and (max-width: 360px) {}

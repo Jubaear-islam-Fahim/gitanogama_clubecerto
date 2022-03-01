@@ -1,368 +1,331 @@
 @import url("../css/reset.css");
-
-@font-face {
-    font-family: "Squares";
-    src: url("../fonts/SquaresBoldFree.otf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 body {
-    font-family: "Squares";
-    font-size: 17px;
-    background: url(../img/bg.jpg) no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
-
-header {
-    background-color: #7a866e;
-    position: relative;
-    z-index: 1;
+.clubecert-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 1fr;
+      grid-template-columns: 450px 1fr;
+  gap: 10px;
 }
 
-.header-area {
-    display: grid;
-    grid-template-columns: 20% 1fr 20%;
-    gap: 10px;
-    max-width: 1917px;
-    margin: 0 auto;
-    align-items: center;
-    padding: 0 20px;
+.clubecert-left {
+  padding: 40px;
+  padding-right: 0;
 }
 
-.box_btn {
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2px;
+.clubecert-left .clubecert-title {
+  font-size: 34px;
+  line-height: 46px;
+  color: #48854B;
+  font-weight: 300;
+  padding: 27px 0;
 }
 
-.box_btn ul {}
-
-.box_btn ul li {
-    display: inline-block;
+.clubecert-left .clubecert-title b {
+  font-weight: 700;
 }
 
-
-.box_btn ul li a {
-    background-color: #394531;
-    min-width: 210px;
-    height: 40px;
-    display: inline-block;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    color: #ffffff;
-    padding: 10px 10px;
-}
-.box_btn ul li .active{
-    background-color: #b5d198;
-    position: relative;
-}
-.box_btn ul li .active::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: #394531;
-    bottom: 0;
+.clubecert-left form {
+  display: -ms-grid;
+  display: grid;
+  gap: 23px;
 }
 
-
-.connect_btn {
-    margin-left: auto;
+.clubecert-left .box {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
 }
 
-.connect_btn a {
-    font-size: 17px;
-    color: #546048;
-    background: url("../img/bg_bg1.png") no-repeat center;
-    background-size: cover;
-    width: 220px;
-    height: 46px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+.clubecert-left .box .grope-box label {
+  font-weight: normal;
+  line-height: 91.9%;
+  color: #AFAFAF;
+  padding-bottom: 10px;
 }
 
-.main-area {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 40px;
-    position: relative;
-    padding-bottom: 50px;
+.clubecert-left .box .grope-box input {
+  background: #F2F2F2;
+  border: 1px dashed #AFAFAF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 8px;
 }
 
-.fire-bg {
-    position: absolute;
-    top: -124px;
-    left: 50%;
-    transform: translateX(-50%);
+.clubecert-left .select-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 30px 1fr;
+      grid-template-columns: 35% 30px 1fr;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fire-bg img {
-    width: 800px;
+.clubecert-left .select-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
 }
 
-/* .fire-bg::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 800px;
-    height: 800px;
-    background: url('../img/fire-welding-sparks-png-thumb23.png') no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    margin: 0 auto;
-    transform: translateX(-50%);
-} */
-
-.heading-text {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 40px;
+.clubecert-left .select-content ul .c_o {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #fff;
 }
 
-.heading-text .h1 {
-    font-size: 70px;
-    color: #ffffff;
-    padding-bottom: 10px;
+.clubecert-left .select-content ul .red {
+  background: #FE0000;
 }
 
-.heading-text .h6 {
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 1.3;
+.clubecert-left .select-content ul .green {
+  background: #00FF01;
 }
 
-.geno-box {
-
-    position: relative;
-    z-index: 1;
+.clubecert-left .select-content ul .navy {
+  background: #0100FE;
 }
 
-/* .geno-box::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.75));
-    background-color: #ffffff;
-    border: 2px solid #8aff13;
-    z-index: -11;
-    height: 75%;
-    width: 350px;
-} */
-
-.geno-box img {}
-
-.box_bgi {
-    position: relative;
+.clubecert-left .select-content .upload {
+  height: 40px;
+  background: #48854B;
+  -webkit-box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+          box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.box_bgi img {
-    width: 270px;
+.clubecert-left .select-content span {
+  font-size: 18px;
+  line-height: 17px;
+  color: #AFAFAF;
+  text-transform: uppercase;
+  padding-top: 32px;
 }
 
-/* .box_bgi::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 423px;
-    height: 217px;
-    background: url('../img/Rounded.png') no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    margin: 0 auto;
-    transform: translateX(-50%);
-
-} */
-
-.geno-box h5 {
-    font-size: 33px;
-    color: #333c2c;
-    padding: 20px 0 0px;
+.clubecert-left .title-s {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 91.9%;
+  color: #AFAFAF;
+  padding-bottom: 15px;
 }
 
-.bnb_btn {
-    font-size: 22px;
-    color: #ffffff;
-    border-radius: 10px;
-    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.75));
-    background-color: #7a866e;
-    width: 320px;
-    margin: 0 auto;
-    position: relative;
-    bottom: -15px;
-    display: grid;
-    grid-template-columns: 20px 1fr;
-    gap: 10px;
-    align-items: center;
-    left: 4px;
+.clubecert-left .card-template-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-.bnb_btn img {
-    width: 40px;
-    margin-left: 15px;
-    padding-bottom: 3px;
+.clubecert-left .card-template-btn a {
+  border: 1px dashed #48854B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  height: 48px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  line-height: 17px;
+  color: #48854B;
 }
 
-.check-footer {
-    margin-top: 50px;
-    position: relative;
-    z-index: 1;
+.clubecert-left .card-template-btn .active {
+  background: #48854B;
+  -webkit-box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+          box-shadow: 0px 4px 4px rgba(198, 198, 198, 0.25);
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
-.quantity {
-    border-radius: 10px;
-    background-color: #ffffff;
-    width: 267px;
-    height: 45px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: center;
+.clubecert-left .check-fild ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
 }
 
-.quantity input {
-    font-size: 35px;
-    color: #7a866e;
-    font-family: "Squares";
-    width: 100%;
+.clubecert-left .check-fild li label {
+  font-size: 16px;
+  line-height: 91.9%;
+  color: #AFAFAF;
+  cursor: pointer;
 }
 
-.quantity input,
-.quantity button {
-    outline: none;
-    box-sizing: 0;
-    border: 0;
-    text-align: center;
+.clubecert-left .check-fild li input {
+  visibility: hidden;
+  position: absolute;
 }
 
-
-.quantity button {
-    cursor: pointer;
-    border-radius: 3px;
-    background-color: #546048;
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-    padding: 3px;
-}
- 
-
-.wallet_btn{}
-.wallet_btn a {
-    font-size: 17px;
-    color: #546048;
-    background: url("../img/bgn_bg2.png") no-repeat center;
-    background-size: cover;
-    width: 371px;
-    height: 79px;
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    align-items: center; 
-}
-.wallet_btn a img {
-    width: 40px;
-    margin-left: 29px;
+.clubecert-left .check-fild li .check_btn + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 3px;
+  margin-top: 4px;
 }
 
-.wallet_btn {
-    width: 380px;
-    margin: 20px auto;
+.clubecert-left .check-fild li .check_btn:checked + label:before {
+  background: #48854B;
+  -webkit-box-shadow: 0px 4px 4px #C1E1C3;
+          box-shadow: 0px 4px 4px #C1E1C3;
 }
 
-
-@media (min-width: 320px) and (max-width: 991.98px) {
-    .connect_btn{
-        display: none;
-    }
-    .header-area{
-        grid-template-columns: 1fr;
-        padding: 0;
-        gap: 1px;
-    }
-    .logo {
-        text-align: center;
-        background: #394531;
-        padding: 15px 0;
-    }
-    .box_btn ul li a {
-        min-width: 113px;
-        height: 27px;
-        font-size: 12px;
-        padding: 10px 20px;
-    }
-    .box_btn ul li { 
-        margin: 0 -10px;
-    }
-    .heading-text .h1 {
-        font-size: 40px; 
-    }
-    .heading-text .h6 {
-        font-size: 15px; 
-    }
-    .fire-bg img {
-        width: 675px; 
-    } 
-    .box_bgi img {
-        width: 207px;
-    }
-    .geno-box h5 {
-        font-size: 20px; 
-    }
-    .bnb_btn {
-        font-size: 17px; 
-        width: 260px; 
-    }
-    .main-area {
-        overflow: hidden;
-        padding-bottom: 52px;
-    }
-    .quantity { 
-        width: 215px;
-        height: auto; 
-    }
-    .quantity button { 
-        font-size: 30px; 
-    }
-    .quantity input {
-        font-size: 27px; 
-    }
-    .wallet_btn a {
-        font-size: 16px; 
-        width: 315px;
-        height: 59px; 
-        margin: 0 auto;
-    }
+.clubecert-left .check-fild li input:checked ~ label {
+  color: #48854B;
+  font-weight: 500;
 }
 
-@media (min-width: 320px) and (max-width: 360px) {
-    .heading-text .h1 {
-        font-size: 35px;
-    }
-    .heading-text .h6 {
-        font-size: 12px;
-    }
-    .wallet_btn a {
-        font-size: 15px;
-        width: 278px; 
-        margin-left: 20px;
-    }
-    .wallet_btn a img {
-        width: 30px;
-        margin-left: 22px;
-    }
-     
-    
+.clubecert-left .clubecerto-logo li {
+  display: inline-block;
+  margin: 0 5px;
 }
+
+.clubecert-left .watermark {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px 1fr;
+      grid-template-columns: 110px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clubecert-left .watermark .title-s {
+  padding-bottom: 0;
+}
+
+.clubecert-left .watermark .watermark-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.clubecert-left .watermark .watermark-btn .btn {
+  width: 51px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #48854B;
+  border: 1px dashed #48854B;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.clubecert-left .watermark .watermark-btn .active {
+  background-color: #48854B;
+  color: #fff;
+  font-weight: 600;
+}
+
+.clubecert-left .copy-right {
+  padding-top: 35px;
+}
+
+.clubecert-left .copy-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.clubecert-left .copy-right li {
+  display: inline-block;
+}
+
+.clubecert-left .copy-right p {
+  font-size: 18px;
+  line-height: 17px;
+  color: #AFAFAF;
+  padding-top: 10px;
+}
+
+.clubecert-left .copy-right p span {
+  font-weight: 500;
+  color: #48854B;
+}
+
+.clubecert-right {
+  background-image: url(../img/right-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clubecert-right .clubecert-ttt {
+  position: relative;
+  left: 39%;
+  width: 430px;
+}
+
+.clubecert-right .clubecert-ttt img {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.clubecert-right .h2 {
+  font-weight: bold;
+  font-size: 43px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */

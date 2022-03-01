@@ -5,132 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TankPad NFT Loot Box</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-
-    <header>
-        <div class="header-area">
+    <div class="clubecert-area">
+        <div class="clubecert-left">
             <div class="logo">
-                <img src="img/logo.png" alt="logo">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
-            <div class="box_btn">
-                <ul>
-                    <li><a href="#" class="active">tankpad box</a></li>
-                    <li><a href="#">Marketplace</a></li>
+            <h3 class="clubecert-title">
+                <b>It's easy, it's practical</b>
+                and it's exciting.
+            </h3>
+            <form action="/">
+                <div class="box">
+                    <div class="grope-box">
+                        <label>Name</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="grope-box">
+                        <label>CPF</label>
+                        <input type="text" class="input-box">
+                    </div>
+                </div>
+                <div class="select-content">
+                    <div class="select-color">
+                        <div class="title-s">Select RGB color</div>
+                        <ul>
+                            <li class="c_o red"></li>
+                            <li class="c_o green"></li>
+                            <li class="c_o navy"></li>
+                        </ul>
+                    </div>
+                    <span>or</span>
+                    <div class="select-bg">
+                        <div class="title-s">Background</div>
+                        <div class="upload">Image Upload</div>
+                    </div> 
+                </div>
+                <div class="card-template">
+                    <div class="title-s">Select card template</div>
+                    <div class="card-template-btn">
+                        <a href="#" class="active">Card One</a>
+                        <a href="#">Card Two</a>
+                    </div>
+                </div>
+                <div class="check-fild">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="vehicle1" class="check_btn" name="vehicle1" checked>
+                            <label for="vehicle1">Card Front Side </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="vehicle2" class="check_btn" name="vehicle2">
+                            <label for="vehicle2">Card Front Side </label>
+                        </li>
+                    </ul>
+                    
+                    <!-- <label for="vehicle1"> 
+                        <input type="checkbox" id="vehicle1" name="vehicle1">
+                        Card Front Side
+                    </label>
+                    <label for="vehicle2"> 
+                        <input type="checkbox" id="vehicle2" name="vehicle2">
+                        Card Back Side 
+                    </label>  -->
+                </div>
+                <ul class="clubecerto-logo">
+                    <div class="title-s">Select RGB color</div>
+                    <li><img src="img/clubecerto1.png" alt=""></li>
+                    <li><img src="img/clubecerto2.png" alt=""></li>
                 </ul>
-            </div>
-            <div class="connect_btn">
-                <a href="#">Connect Wallet</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="main-area">
-        <div class="fire-bg">
-            <img src="img/fire-welding-sparks-png-thumb23.png" alt="">
-        </div>
-        <div class="heading-text">
-            <div class="h1">TANKPAD BOX</div>
-            <div class="h6">Each box contains an NFT Tank <br /> with randomized skins and stats.</div>
-        </div>
-        <div class="geno-box">
-            <div class="box_bgi">
-                <img src="img/box.png" alt="box">
-            </div>
-            <h5>GENO BOX</h5>
-            <div class="bnb_btn">
-                <img src="img/binance-coin.png" alt="">
-                <div class="binance_bnb"><span class="bnp-bal">0.5</span> BNB</div>
-            </div>
-        </div>
-
-        <div class="check-footer">
-            <form id="myform" method="POST" class="quantity" action="#">
-                <button type="button" class="qtyminus minus" field="quantity"><i class="fa-solid fa-minus"></i></button>
-                <input type="number" name="quantity" value="1" class="qty" readonly />
-                <button type="button" class="qtyplus plus" field="quantity"><i class="fa-solid fa-plus"></i></button>
+                <div class="watermark">
+                    <div class="title-s">Watermark</div>
+                    <div class="watermark-btn">
+                        <a href="#" class="btn active">yes</a>
+                        <a href="#" class="btn">no</a>
+                    </div>
+                </div> 
             </form>
-
-            <div class="wallet_btn">
-                <a href="#"><img src="img/checked-mark.png"> Connect Wallet</a>
+            <div class="copy-right">
+                <ul>
+                    <li><a href="#"><img src="img/facebook.png"></a></li>
+                    <li><a href="#"><img src="img/github.png"></a></li>
+                    <li><a href="#"><img src="img/instagram.png"></a></li>
+                    <li><a href="#"><img src="img/play.png"></a></li>
+                </ul>
+                <p>All rights reserved for <span>clubecerto</span></p>
             </div>
         </div>
-
+        <div class="clubecert-right">
+            <div class="clubecert-ttt">
+                <div class="h2">
+                    Card One
+                   <br> Front Side
+                </div>
+                <a href="#"><img src="img/clubecerto-right.png" alt=""></a>
+            </div>
+        </div>
     </div>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(($) => {
-
-            $('.main-area').on('click', '.plus', function (e) {
-                let $input = $(this).prev('input.qty');
-                let val = parseInt($input.val());
-
-                $input.val(val + 1).change();
-            });
-
-
-            $('.main-area').on('click', '.minus', function (e) {
-                let $input = $(this).next('input.qty');
-                var val = parseInt($input.val());
-                if (val > 1) {
-                    $input.val(val - 1).change();
-                };
-            });
-
-
-
-            const plusBnp = () => {
-                const bnpBal = document.querySelector('.bnp-bal').innerText
-                const BalInt = parseFloat(bnpBal)
-                let newBal = BalInt + 0.5
-                const isDot = newBal.toString().includes('.')
-
-                if (!isDot) {
-                    newBal = newBal.toString() + ".0"
-                }
-
-                document.querySelector('.bnp-bal').innerText = newBal
-            }
-
-            const minusBnp = () => {
-                const bnpBal = document.querySelector('.bnp-bal').innerText
-                const BalInt = parseFloat(bnpBal)
-                if (BalInt > 0.5) {
-                    let newBal = BalInt - 0.5
-
-                    const isDot = newBal.toString().includes('.')
-
-                    if (!isDot) {
-                        newBal = newBal.toString() + ".0"
-                    }
-                    document.querySelector('.bnp-bal').innerText = newBal
-                }
-            }
-
-            const plusBtn = document.querySelector('.plus')
-            plusBtn.addEventListener('click', () => {
-                plusBnp()
-            })
-
-            const minusBtn = document.querySelector('.minus')
-            minusBtn.addEventListener('click', () => {
-                minusBnp()
-            })
-
-
-        });
-    </script>
 </body>
 
 </html>
