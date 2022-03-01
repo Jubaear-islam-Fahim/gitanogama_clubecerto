@@ -8,8 +8,8 @@ body {
 .clubecert-area {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 470px 1fr;
-      grid-template-columns: 470px 1fr;
+  -ms-grid-columns: 480px 1fr;
+      grid-template-columns: 480px 1fr;
   gap: 70px;
 }
 
