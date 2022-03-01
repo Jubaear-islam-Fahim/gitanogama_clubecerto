@@ -107,7 +107,13 @@
                 const bnpBal = document.querySelector('.bnp-bal').innerText
                 const BalInt = parseFloat(bnpBal)
                 if (BalInt > 0.5) {
-                    const newBal = BalInt - 0.5
+                    let newBal = BalInt - 0.5
+
+                    const isDot = newBal.toString().includes('.')
+
+                    if (!isDot) {
+                        newBal = newBal.toString() + ".0"
+                    }
                     document.querySelector('.bnp-bal').innerText = newBal
                 }
             }
