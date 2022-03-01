@@ -77,15 +77,8 @@
                 $input.val(val + 1).change(); 
   
             });
-
-            $('.main-area').on('click', '.plus', function (e) {
-                let $bnbInput = $(this).prev('input.bnbInput'); 
-                let vals = parseInt($bnbInput.val());
-                $bnbInput.val(vals + 1).change(); 
-  
-            });
  
-            
+  
             $('.main-area').on('click', '.minus', function (e) {
                 let $input = $(this).next('input.qty');
                 var val = parseInt($input.val());
