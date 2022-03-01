@@ -10,7 +10,7 @@ body {
   display: grid;
   -ms-grid-columns: 480px 1fr;
       grid-template-columns: 480px 1fr;
-  gap: 70px;
+  gap: 95px;
 }
 
 .clubecert-left {
